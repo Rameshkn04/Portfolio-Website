@@ -9,6 +9,8 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineTrophy,
+  AiOutlineFileText,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -94,6 +96,44 @@ function NavBar() {
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} />
                 {" "}Resume
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+              as={Link}
+              to="/experience"
+              onClick={() => updateExpanded(false)}
+              >
+              Experience
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/certificates"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineTrophy style={{ marginBottom: "2px" }} /> Certificates
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/research"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFileText style={{ marginBottom: "2px" }} /> Research
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/patents"
+                onClick={() => updateExpanded(false)}
+              >
+                📜 Patents
               </Nav.Link>
             </Nav.Item>
 
