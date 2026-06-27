@@ -3,15 +3,17 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
-import Type from "./Type";
-import Techstack from "../About/Techstack";
-import Github from "../About/Github";
+import Type from "./Type";  
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
+  AiOutlineMail,
+  AiOutlineTwitter,
+  AiFillFacebook,
 } from "react-icons/ai";
+
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 function Home() {
   return (
@@ -59,26 +61,102 @@ function Home() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
+
+              {/* GitHub */}
+
               <li className="social-icons">
                 <a
                   href="https://github.com/Rameshkn04"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  title="GitHub"
                 >
                   <AiFillGithub />
                 </a>
               </li>
+
+              {/* LinkedIn */}
+
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/ramesh-kn"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  title="LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
+
+              {/* LeetCode */}
+
+              <li className="social-icons">
+                <a
+                  href="https://leetcode.com/u/RameshKN04/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  title="LeetCode"
+                >
+                  <SiLeetcode />
+                </a>
+              </li>
+
+              {/* Instagram */}
+
+              <li className="social-icons">
+                <a
+                  href="https://instagram.com/ramesh.kn04"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  title="Instagram"
+                >
+                  <AiFillInstagram />
+                </a>
+              </li>
+              {/* Facebook */}
+
+              <li className="social-icons">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100081888117211"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                  title="Facebook"
+                >
+                  <AiFillFacebook />
+                </a>
+              </li>
+
+              {/* X (Twitter) */}
+
+              <li className="social-icons">
+                <a
+                  href="https://x.com/RameshKN04"
+                  target="_blank"
+                  rel="noreferrer"  
+                  className="icon-colour home-social-icons"
+                  title="X (Twitter)"
+                >
+                  <AiOutlineTwitter />
+                </a>
+              </li>
+
+              {/* Email */}
+
+              <li className="social-icons">
+                <a
+                  href="mailto:rameshkn2004@gmail.com"
+                  className="icon-colour home-social-icons"
+                  title="Email"
+                >
+                  <AiOutlineMail />
+                </a>
+              </li>
+
             </ul>
           </Col>
         </Row>

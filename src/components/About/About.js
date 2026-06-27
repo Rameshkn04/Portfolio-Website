@@ -6,6 +6,9 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import LeetCodeStats from "./LeetCodeStats";
+import CareerObjective from "./CareerObjective";
+import CodingProfiles from "./CodingProfiles";
 
 function About() {
   return (
@@ -45,9 +48,17 @@ function About() {
           <h1 className="project-heading">
             <strong className="purple">Tools</strong> I use
           </h1>
+          <Techstack />
+
           <Toolstack />
 
+          <CodingProfiles />
+
           <Github />
+
+          <LeetCodeStats />
+
+          <CareerObjective />
         </Container>
       </Container>
     </>

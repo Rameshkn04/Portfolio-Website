@@ -1,0 +1,215 @@
+/* ===========================
+   CONTACT SECTION
+=========================== */
+
+.contact-section {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  color: white;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: #d6d6d6;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* ===========================
+   CONTACT CARD
+=========================== */
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(199, 112, 240, 0.3) !important;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-radius: 18px !important;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: all 0.35s ease;
+  margin-bottom: 30px;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(199, 112, 240, 0.35);
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-link:hover {
+  color: #c770f0;
+}
+
+/* ===========================
+   SOCIAL ICONS
+=========================== */
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  width: 55px;
+  height: 55px;
+  background: rgba(199, 112, 240, 0.12);
+  border: 1px solid rgba(199, 112, 240, 0.35);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  transition: all 0.3s ease;
+}
+
+.contact-icons a:hover {
+  background: #c770f0;
+  color: white;
+  transform: scale(1.12);
+  box-shadow: 0 0 18px rgba(199, 112, 240, 0.6);
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+.contact-card label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contact-card .form-control,
+.contact-card .form-select {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(199,112,240,0.3);
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.contact-card .form-control:focus,
+.contact-card .form-select:focus {
+  background: rgba(255,255,255,0.12);
+  color: white;
+  border-color: #c770f0;
+  box-shadow: 0 0 12px rgba(199,112,240,.4);
+}
+
+.contact-card textarea {
+  resize: none;
+}
+
+/* Placeholder */
+
+.contact-card input::placeholder,
+.contact-card textarea::placeholder {
+  color: #bdbdbd;
+}
+
+/* ===========================
+   SELECT OPTION
+=========================== */
+
+.contact-card option {
+  color: black;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.send-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 12px !important;
+  border: none !important;
+  background: linear-gradient(
+    135deg,
+    #8e2de2,
+    #c770f0
+  ) !important;
+  transition: all 0.35s ease;
+}
+
+.send-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 18px rgba(199,112,240,0.55);
+}
+
+.send-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ===========================
+   ALERT
+=========================== */
+
+.alert {
+  border-radius: 10px !important;
+  font-weight: 500;
+}
+
+/* ===========================
+   DIVIDER
+=========================== */
+
+.contact-card hr {
+  border-color: rgba(255,255,255,0.12);
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 991px) {
+
+  .contact-section {
+    padding-top: 120px;
+  }
+
+  .contact-icons {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .contact-subtitle {
+    font-size: 15px;
+  }
+
+  .contact-card {
+    padding: 18px;
+  }
+
+  .contact-icons a {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+
+  .send-btn {
+    font-size: 16px;
+  }
+
+}
