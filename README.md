@@ -148,10 +148,6 @@ Battery Intelligence Platform
 
 AI-powered intelligent tourism recommendation system using multiple autonomous agents.
 
-🌐 Live Demo
-
-https://tourism-multiagent.vercel.app
-
 ---
 
 ## 🌾 GramaUrja
