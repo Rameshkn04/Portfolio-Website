@@ -250,6 +250,8 @@ git
 }
 #tsparticles {
   position: fixed !important;
+  z-index: 0;
+  pointer-events: none;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   width: 100%;
