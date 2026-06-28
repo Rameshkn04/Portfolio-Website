@@ -89,18 +89,23 @@
    FORM
 =========================== */
 
-.contact-card label {
+.contact-card label,
+.contact-card .form-label {
+  color: #ffffff !important;
   font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.4px;
   margin-bottom: 8px;
 }
 
 .contact-card .form-control,
 .contact-card .form-select {
   background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(199,112,240,0.3);
-  color: white;
+  border: 1px solid rgba(199,112,240,0.35);
+  color: #ffffff;
   border-radius: 10px;
-  padding: 12px;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
 }
 
 .contact-card .form-control:focus,
@@ -118,8 +123,31 @@
 /* Placeholder */
 
 .contact-card input::placeholder,
-.contact-card textarea::placeholder {
+.contact-card textarea::placeholder,
+.contact-card select {
   color: #bdbdbd;
+  opacity: 1;
+}
+
+.contact-card .form-control:hover,
+.contact-card .form-select:hover {
+  border-color: rgba(199,112,240,0.6);
+}
+
+.contact-card ul {
+  padding-left: 20px;
+}
+
+.contact-card ul li {
+  color: #f2f2f2;
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.contact-card h3,
+.contact-card h5 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 /* ===========================
@@ -127,7 +155,8 @@
 =========================== */
 
 .contact-card option {
-  color: black;
+  background: #2b2140;
+  color: white;
 }
 
 /* ===========================
@@ -150,8 +179,8 @@
 }
 
 .send-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 18px rgba(199,112,240,0.55);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 8px 22px rgba(199,112,240,0.55);
 }
 
 .send-btn:disabled {
@@ -212,4 +241,22 @@
     font-size: 16px;
   }
 
+}
+
+/* Custom Dropdown */
+
+.contact-card .form-select {
+  --bs-form-select-bg-img: none !important;
+
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23c770f0' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") !important;
+
+  background-repeat: no-repeat !important;
+  background-position: right 16px center !important;
+  background-size: 30px !important;
+
+  padding-right: 52px !important;
 }
