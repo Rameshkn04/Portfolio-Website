@@ -1,6 +1,9 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Particle from "../Particle";
+
+import mindmatrixLogo from "../../Assets/Experience/mindmatrixed-logo.png";
+import completionLetter from "../../Assets/Experience/MindMatrixEd_Completion_Letter.pdf";
 
 function Experience() {
   return (
@@ -19,27 +22,53 @@ function Experience() {
             marginBottom: "50px",
           }}
         >
-          My internship experience and industry exposure.
+          My internship experience, industry exposure, and real-world software
+          development journey.
         </p>
 
-        <Row style={{ justifyContent: "center" }}>
-          <Col md={10}>
+        <Row className="justify-content-center">
+          <Col lg={10}>
             <Card className="quote-card-view">
               <Card.Body>
 
-                <h2 className="purple">
-                  Android App Developer using GenAI Intern
-                </h2>
+                {/* Header */}
 
-                <h5 style={{ color: "#c770f0" }}>
-                  MindMatrixEd | Bengaluru
-                </h5>
+                <Row className="align-items-center">
 
-                <p style={{ color: "#bdbdbd" }}>
-                  February 2026 – May 2026
-                </p>
+                  <Col md={9}>
+
+                    <h2 className="purple">
+                      Android App Developer using GenAI Intern
+                    </h2>
+
+                    <h5 style={{ color: "#c770f0" }}>
+                      MindMatrixEd | Bengaluru
+                    </h5>
+
+                    <p style={{ color: "#bdbdbd" }}>
+                      February 2026 – May 2026
+                    </p>
+
+                  </Col>
+
+                  <Col md={3} className="text-center">
+
+                    <img
+                      src={mindmatrixLogo}
+                      alt="MindMatrixEd"
+                      style={{
+                        width: "150px",
+                        maxWidth: "100%",
+                      }}
+                    />
+
+                  </Col>
+
+                </Row>
 
                 <hr />
+
+                {/* Project */}
 
                 <h4 className="purple">
                   🚀 Project Undertaken
@@ -60,43 +89,44 @@ function Experience() {
                 >
                   <li>
                     Developed an Android-based smart village power monitoring
-                    application to track electricity consumption and
+                    application to monitor electricity consumption and
                     distribution.
                   </li>
 
                   <li>
                     Built interactive dashboards for real-time monitoring of
-                    energy usage and power analytics.
+                    village energy usage.
                   </li>
 
                   <li>
-                    Integrated backend APIs to fetch and display live energy
-                    consumption data.
+                    Integrated REST APIs and Firebase for live energy
+                    management.
                   </li>
 
                   <li>
-                    Implemented smart reporting and visualization features to
-                    analyze village-level power usage trends.
+                    Designed intuitive mobile interfaces using Android
+                    development best practices.
                   </li>
 
                   <li>
-                    Improved accessibility of energy insights for rural
-                    communities through a user-friendly mobile interface.
+                    Implemented smart reporting and visualization modules for
+                    power analytics.
                   </li>
 
                   <li>
-                    Collaborated with developers and mentors to design,
-                    develop, test, and deploy the application.
+                    Collaborated with mentors and developers following software
+                    engineering workflows.
                   </li>
 
                   <li>
-                    Gained practical experience in Android development,
-                    API integration, software engineering workflows,
-                    and GenAI-driven application concepts.
+                    Gained practical experience in Android Development,
+                    Generative AI, Firebase, API Integration and UI/UX Design.
                   </li>
                 </ul>
 
                 <br />
+
+                {/* Technologies */}
 
                 <h4 className="purple">
                   💻 Technologies Used
@@ -119,21 +149,108 @@ function Experience() {
                   </span>
 
                   <span className="badge bg-warning text-dark p-2">
-                    Firebase
+                    Jetpack Compose
                   </span>
 
                   <span className="badge bg-info text-dark p-2">
-                    REST APIs
+                    Firebase
                   </span>
 
                   <span className="badge bg-danger p-2">
-                    GenAI
+                    REST APIs
                   </span>
 
                   <span className="badge bg-secondary p-2">
+                    Android Studio
+                  </span>
+
+                  <span className="badge bg-dark p-2">
+                    Google AI Studio
+                  </span>
+
+                  <span className="badge bg-primary p-2">
+                    Google Cloud Labs
+                  </span>
+
+                  <span className="badge bg-success p-2">
+                    Generative AI
+                  </span>
+
+                  <span className="badge bg-warning text-dark p-2">
                     Mobile UI/UX
                   </span>
+
                 </div>
+
+                <br />
+
+                {/* Achievements */}
+
+                <h4 className="purple">
+                  🏆 Key Achievements
+                </h4>
+
+                <ul
+                  style={{
+                    textAlign: "left",
+                    color: "white",
+                    lineHeight: "2",
+                  }}
+                >
+                  <li>
+                    Successfully completed a 4-month Android Development
+                    Internship.
+                  </li>
+
+                  <li>
+                    Developed the GramaUrja mobile application for rural power
+                    monitoring.
+                  </li>
+
+                  <li>
+                    Worked with Kotlin, Jetpack Compose, Firebase and REST APIs.
+                  </li>
+
+                  <li>
+                    Explored Generative AI concepts using Google AI Studio.
+                  </li>
+
+                  <li>
+                    Received an <strong>EXCELLENT</strong> performance rating
+                    during the internship.
+                  </li>
+                </ul>
+
+                <br />
+
+                {/* Completion Letter */}
+
+                <h4 className="purple">
+                  📄 Internship Completion Letter
+                </h4>
+
+                <p style={{ color: "white" }}>
+                  Internship successfully completed with an
+                  <strong> EXCELLENT </strong>
+                  performance rating.
+                </p>
+
+                <Button
+                  variant="primary"
+                  href="https://mindmatrix.io/"
+                  target="_blank"
+                  style={{ marginRight: "15px" }}
+                >
+                  🌐 Company Website
+                </Button>
+
+                <Button
+                  variant="outline-primary"
+                  href={completionLetter}
+                  target="_blank"
+                >
+                  📄 View Completion Letter
+                </Button>
 
               </Card.Body>
             </Card>

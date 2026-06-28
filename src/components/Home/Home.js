@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -16,6 +17,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -37,6 +39,31 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
+
+                <div
+                  style={{
+                    marginTop: "30px",
+                    display: "flex",
+                    gap: "15px",
+                    flexWrap: "wrap",
+                  }}
+                >
+                <Button
+                variant="primary"
+                size="lg"
+                onClick={() => navigate("/resume")}
+                >
+                📄 View Resume
+                </Button>
+
+                <Button
+                variant="outline-light"
+                size="lg"
+                onClick={() => navigate("/contact")}
+                >
+                📬 Contact Me
+              </Button>
+                </div>
               </div>
             </Col>
 
@@ -56,9 +83,10 @@ function Home() {
       <Container>
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
           <Col md={12} className="home-about-social">
-            <h1>Find Me On</h1>
+            <h1>Let's Connect</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Interested in collaborating, discussing opportunities, or learning more
+              about my work? Connect with me through any of the platforms below.
             </p>
             <ul className="home-about-social-links">
 
@@ -158,6 +186,15 @@ function Home() {
               </li>
 
             </ul>
+            <div style={{ marginTop: "35px" }}>
+              <Button
+                variant="primary"
+                size="lg"
+                onClick={() => navigate("/contact")}
+              >
+                📬 Get In Touch
+              </Button>
+            </div>
           </Col>
         </Row>
       </Container>
