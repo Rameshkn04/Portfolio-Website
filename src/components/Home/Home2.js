@@ -15,36 +15,47 @@ function Home2() {
 
             <p className="home-about-body">
               Hi everyone, I am{" "}
-              <b className="purple">Ramesh K N</b>, an Artificial Intelligence &
-              Machine Learning Engineer from Bengaluru, India.
-
-              <br />
-              <br />
-
-              I am passionate about building intelligent software solutions using
+              <b className="purple">Ramesh K N</b>, a{" "}
               <b className="purple">
-                {" "}Machine Learning, Generative AI, Full Stack Development,
-                Computer Vision, and Data Analytics.
+                Bachelor of Engineering graduate in Artificial Intelligence &
+                Machine Learning
+              </b>{" "}
+              from{" "}
+              <b className="purple">
+                CMR Institute of Technology (CMRIT), Bengaluru
+              </b>
+              .
+
+              <br />
+              <br />
+
+              I am passionate about building intelligent software solutions
+              using
+              <b className="purple">
+                {" "}Artificial Intelligence, Machine Learning,
+                Generative AI, Full Stack Development,
+                Computer Vision, Data Analytics,
+                and Intelligent Systems.
               </b>
 
               <br />
               <br />
 
-              Currently, I am pursuing my Bachelor's degree in
-              <b className="purple">
-                {" "}Artificial Intelligence & Machine Learning
-              </b>
-              with a CGPA of
-              <b className="purple"> 8.34</b>.
+              I graduated with a
+              <b className="purple"> CGPA of 8.34</b>
+              {" "}and enjoy applying AI to solve practical,
+              real-world challenges.
 
               <br />
               <br />
 
-              I have worked on several impactful projects including
+              I have developed several impactful projects including
               <b className="purple">
                 {" "}LexCounsel AI,
                 EV Battery Copilot,
-                Face Recognition Student Management System,
+                Multi-Agent Tourism Recommendation System,
+                GramaUrja Android Application,
+                Face Recognition Attendance System,
                 and Smart Traffic Management System.
               </b>
 
@@ -53,27 +64,47 @@ function Home2() {
 
               My technical expertise includes
               <b className="purple">
-                {" "}Python, Java, React.js, FastAPI, Machine Learning,
-                Generative AI, MongoDB, Power BI, Tableau, and Git.
+                {" "}Python, Java, Kotlin,
+                React.js, FastAPI, Machine Learning,
+                Generative AI, Firebase,
+                MongoDB, MySQL,
+                Power BI, Tableau,
+                Git & GitHub.
               </b>
 
               <br />
               <br />
 
-              I have completed a
-              <b className="purple"> Generative AI Internship </b>
-              and contributed to
+              I successfully completed a
               <b className="purple">
-                {" "}research publications and patent development
+                {" "}Generative AI Internship at MindMatrixEd
+              </b>{" "}
+              where I developed the
+              <b className="purple">
+                {" "}GramaUrja Android application
               </b>
-              focused on innovative AI-powered solutions.
+              . I have also co-authored
+              <b className="purple">
+                {" "}one research publication
+              </b>{" "}
+              and filed
+              <b className="purple">
+                {" "}two AI-related patents
+              </b>
+              .
 
               <br />
               <br />
 
-              I am continuously learning, building projects, and exploring new
-              technologies to create real-world solutions that make a meaningful
-              impact.
+              I am continuously learning emerging technologies,
+              contributing to innovative projects,
+              and exploring opportunities in
+              <b className="purple">
+                {" "}Software Engineering,
+                Artificial Intelligence,
+                Machine Learning,
+                and Generative AI.
+              </b>
             </p>
           </Col>
 
