@@ -13,7 +13,13 @@ function Home2() {
               ABOUT <span className="purple">ME</span>
             </h1>
 
-            <p className="home-about-body">
+            <p
+              className="home-about-body"
+              style={{
+                textAlign: "justify",
+                textJustify: "inter-word",
+              }}
+            >
               Hi everyone, I am{" "}
               <b className="purple">Ramesh K N</b>, a{" "}
               <b className="purple">
